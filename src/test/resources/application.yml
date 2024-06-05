@@ -1,0 +1,16 @@
+spring:
+  profiles.active: test
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/testcase
+#    username: sa
+
+logging:
+  level:
+    org.springframework.jdbc: debug
+    hello.itemservice.repository.mybatis: trace
+
+mybatis:
+  type-aliases-package: hello.itemservice.domain
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
