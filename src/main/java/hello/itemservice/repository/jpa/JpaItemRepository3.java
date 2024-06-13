@@ -69,4 +69,5 @@ public class JpaItemRepository3 implements ItemRepository {
 
         return result;
     }
+
 }
